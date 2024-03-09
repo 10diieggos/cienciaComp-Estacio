@@ -97,15 +97,27 @@ O polimorfismo é muito útil quando você tem muitos tipos diferentes de uma cl
 
 ## Perguntas
 
-
- O que é polimorfismo? 
+ **O que é polimorfismo?**
+ 
  Polimorfismo é um conceito em programação orientada a objetos que permite que um método se comporte de maneiras diferentes dependendo do objeto que o está chamando. Isso é útil quando você tem várias classes que herdam de uma superclasse comum, mas precisam implementar um método de maneira diferente.
- O que o método adicionaconta faz no código? 
+ 
+ **O que o método adicionaconta faz no código?**
+ 
  O método adicionaconta adiciona uma conta à lista de contas do banco. Ele aceita um objeto que é uma instância de `ContaCliente` ou de uma de suas subclasses.
- O que acontece quando o método calcularendimentomensal é chamado? 
+ 
+ **O que acontece quando o método calcularendimentomensal é chamado?**
+ 
  Quando o método calcularendimentomensal é chamado, ele percorre todas as contas do banco e chama o método CalculoRendimento em cada uma delas. Isso atualiza o valor investido em cada conta com base em seu rendimento e descontos.
- O que o método imprimesaldocontas faz? 
+ 
+ **O que o método imprimesaldocontas faz?**
+ 
  O método imprimesaldocontas percorre todas as contas do banco e imprime o saldo de cada conta. Ele faz isso chamando o método Extrato em cada conta.
- O que é o teste “É-UM” mencionado no texto? 
+ 
+ **O que é o teste “É-UM” mencionado no texto?**
+ 
  O teste “É-UM” é uma maneira de verificar se um objeto é uma instância de uma determinada classe ou de uma de suas subclasses. No contexto do código, é usado para verificar se um objeto passado para o método adicionaconta é uma `ContaCliente` ou um tipo de `ContaCliente`.
- Pergunta: O que acontece se eu tentar adicionar um objeto que não é uma `ContaCliente` ao banco? Resposta: Se você tentar adicionar um objeto que não é uma `ContaCliente` (ou uma de suas subclasses) ao banco, você não receberá um erro imediatamente. No entanto, você receberá um erro quando o banco tentar calcular o rendimento mensal, porque ele espera que cada conta tenha um método CalculoRendimento().
+ 
+ **O que acontece se eu tentar adicionar um objeto que não é uma `ContaCliente` ao banco?**
+ 
+ Se você tentar adicionar um objeto que não é uma `ContaCliente` (ou uma de suas subclasses) ao banco, você não receberá um erro imediatamente. No entanto, você receberá um erro quando o banco tentar calcular o rendimento mensal, porque ele espera que cada conta tenha um método CalculoRendimento().
+ 
